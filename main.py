@@ -21,18 +21,18 @@ def menu_principal():
         <head>
             <title>Menu do sistema</title>
             <style>
-                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-                .menu-container { background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 400px; }
+                body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+                .menu-container { background-color: #ADEBB3; padding: 50px; border-radius: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0); width: 400px; }
                 h1 { text-align: center; color: #333; margin-bottom: 30px; }
-                .botao { display: block; width: 100%; padding: 15px; margin-bottom: 15px; background-color: #007bff; color: white; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; transition: background 0.3s; box-sizing: border-box; border: none; cursor: pointer; }
-                .botao:hover { background-color: #0056b3; }
-                .botao-sair { background-color: #dc3545; }
+                .botao { display: block; width: 100%; padding: 15px; margin-bottom: 15px; background-color: white; color: black; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; transition: background 0.3s; box-sizing: border-box; border: none; cursor: pointer; }
+                .botao:hover { background-color: #80EF80; }
+                .botao-sair { background-color: #FF746C; color: white }
                 .botao-sair:hover { background-color: #c82333; }
             </style>
         </head>
         <body>
             <div class="menu-container">
-                <h1>Menu de Pacientes</h1>
+                <h1>Opções do sistema</h1>
                 
                 <a href="/docs#/Pacientes/listar_pacientes_pacientes__get" class="botao"> Lista de Pacientes</a>
                 <a href="/docs#/Pacientes/adicionar_paciente_pacientes__post" class="botao"> Adicionar Paciente</a>
