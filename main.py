@@ -48,3 +48,12 @@ def menu_principal():
 @app.get("/pacientes/", tags=["Pacientes"])
 def listar_pacientes():
     return [p.__dict__ for p in patients]
+
+@app.delete("/pacientes/{patient_id}", tags=["Pacientes"])
+def remover_paciente(patient_id: int):
+    for i, paciente in enumerate(patients):
+        if paciente.id == patient_id:
+            del patients[i]
+            return {"mensagem": "Paciente removido com sucesso!"}
+            
+    raise HTTPException(status_code=404, detail="Paciente não encontrado.")
