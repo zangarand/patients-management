@@ -44,3 +44,7 @@ def menu_principal():
         </body>
     </html>
     """
+
+@app.get("/pacientes/", tags=["Pacientes"])
+def listar_pacientes():
+    return [p.__dict__ for p in patients]
