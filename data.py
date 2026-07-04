@@ -1,3 +1,3 @@
-from patient import Patient 
+from class_patient import Patient 
 
 patients = []
